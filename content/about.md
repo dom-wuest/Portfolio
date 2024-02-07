@@ -3,10 +3,10 @@
 type: misc
 
 # change these
-jobTitle: Blogger
-name: dom-wuest
+jobTitle: Software Engineer
+name: Dominik Wüst
 bio: true
 icon: ":coffee:"
 ---
 
-Add your Bio here!:+1:
+Studying Computer Science at Karlsruhe Institute of Technology.

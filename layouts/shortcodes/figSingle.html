@@ -1,0 +1,25 @@
+{{/* Enable a single image to be loaded from a subfolder within a blog post.
+  I.e. `./content/blog/blogpost/images/img.png`.
+  Function call: "{{< figSingle src="folderName/imageName">}}"
+  Optionally pass a general figure caption as "caption".
+*/}}
+
+{{/* load variables */}}
+{{ $page := .Page }}
+{{ $path := .Get "src" }}
+{{ $figCaption := .Get "caption" | default "" }}
+
+{{ $images := $page.Resources.Match $path }}
+
+<div class="flex flex-col">
+  {{ range $image := $images }}
+    {{ $image = $image.Filter (images.Process "resize 768x Lanczos q100 webp") }}
+    <img src="{{ $image.RelPermalink }}" alt="image" loading="lazy" />
+  {{ end }}
+
+  {{ with $figCaption }}
+    <span class="-mt-6 mb-4 text-center text-sm text-slate-700 dark:text-slate-200">
+      {{ . | emojify }}
+    </span>
+  {{ end }}
+</div>

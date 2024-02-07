@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 135.46667 135.46667"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.4485269"
+     inkscape:cx="142.55862"
+     inkscape:cy="244.73139"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#00000000">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <filter
+       id="mask-powermask-path-effect6_inverse"
+       inkscape:label="filtermask-powermask-path-effect6"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect6_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect6_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect16_inverse"
+       inkscape:label="filtermask-powermask-path-effect16"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect16_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect16_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <path
+       id="path1"
+       style="fill:#4d4d4d;fill-rule:evenodd;stroke-width:0.265171"
+       d="M 67.733333 0 A 67.73333 67.73333 0 0 0 0 67.733333 A 67.73333 67.73333 0 0 0 67.733333 135.46667 A 67.73333 67.73333 0 0 0 135.46667 67.733333 A 67.73333 67.73333 0 0 0 67.733333 0 z M 25.000024 34.999931 L 33.785018 34.999931 L 44.852559 34.999931 C 52.431758 34.999931 58.288438 36.966684 62.422546 40.899829 C 66.585364 44.804265 68.66661 50.316434 68.66661 57.436287 L 68.66661 59.999955 L 68.66661 75.178357 L 68.66661 84.080139 L 83.48431 66.307064 L 83.857414 66.307064 L 94.768892 66.307064 L 95.141479 66.307064 L 109.95918 84.080139 L 109.95918 34.999931 L 118.62635 34.999931 L 118.62635 97.614714 L 109.95918 97.614714 L 89.312895 72.85085 L 68.66661 97.614714 L 59.999955 97.614714 L 59.999955 93.660433 C 59.283729 94.140288 58.530507 94.58636 57.728259 94.987484 C 54.168333 96.738738 49.86195 97.614714 44.809151 97.614714 L 33.785018 97.614714 L 25.000024 97.614714 L 25.000024 34.999931 z M 33.785018 43.35446 L 33.785018 89.260185 L 45.110942 89.260185 C 49.733104 89.260185 53.307402 88.06858 55.833801 85.685726 C 58.38891 83.274163 59.666125 79.88682 59.666125 75.523039 L 59.666125 57.091606 C 59.666125 52.727825 58.38891 49.354664 55.833801 46.97181 C 53.307402 44.560247 49.733104 43.35446 45.110942 43.35446 L 33.785018 43.35446 z " />
+  </g>
+</svg>

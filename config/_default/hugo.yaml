@@ -3,7 +3,7 @@
 ############################
 
 baseURL: 'https://dom-wuest.github.io/Portfolio'
-title: Portfolio
+title: Dominik Wüst
 
 ############################
 ## MISC
@@ -12,5 +12,3 @@ title: Portfolio
 enableEmoji: true
 disableKinds: ['taxonomy', 'term']
 languageCode: 'en-us'
-
-

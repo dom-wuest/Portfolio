@@ -3,9 +3,9 @@
 ############################
 
 author:
-  name: dom-wuest
+  name: Dominik Wüst
   image: author.png
-  greeting: "Your new Qubt site :tada:"
+  greeting: "Welcome to my new site :tada:"
   icon: ":wave:"
 
 ############################
@@ -13,8 +13,8 @@ author:
 ############################
 
 links:
-  - github: https://github.com/dom-wuest/Portfolio
-  - link: https://github.com/dom-wuest/Portfolio#readme
+  - github: https://github.com/dom-wuest
+  # - link: https://github.com/dom-wuest/Portfolio#readme
   # - website: 
   # - x-twitter: 
   # - mastodon: 
