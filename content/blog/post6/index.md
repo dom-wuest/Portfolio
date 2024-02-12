@@ -3,15 +3,13 @@ title: PC Modding
 subtitle: "Custom cable sleeves and hardline water cooling"
 summary: Over the past 6 years customized my PC to my likings. This includes creating custom sleeved cables with precise routing, a hardline watercooling loop for the CPU and lots of RGB lighting controlled by an ESP32 microcontroller.
 date: 2022-01-10
-cardimage: bachelorthesis_card.png
-featureimage: bachelorthesis.png
-caption: Put some image of the PC.
+cardimage: modding_card.jpeg
 authors:
   - Dominik: author.png
 ---
 **Hardware**
-- Nvidia RTX 3070 from Gigabyte
-- Amd Ryzen Whatever
+- Nvidia GeForce RTX 3070
+- Amd Ryzen 5 7600X
 - 32GB DDR5 RAM
 
 
@@ -21,7 +19,7 @@ My PC case, the Phanteks Enthoo Evolv, features tempered glass panels on both si
 
 To improve the looks even further, each wire was sleeved in either red or carbon grey to go along with the color theme of the hardware.
 
-{{< figArray subfolder="images" figCaption="Tools needed for cutting wires, crimping and sleeving. And the final result." >}}
+{{< figGrid subfolder="images" figCaption="Top: Tools needed for cutting wires, crimping and sleeving. And the final result. Bottom: Watercooling and lighting in place." >}}
 
 **Hardline water cooling**
 
