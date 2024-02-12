@@ -15,4 +15,4 @@ At 14 years old I started programming the LEGO Mindstorms robot. During my high 
 
 I am now working towards my masters in computer science. Besides studying I am working as a software engineer at Fraunhofer IOSB and contribute to the open-source project "iVS3D" on GitHub. Along with programming, I enjoy weight lifting, hiking and PC modding.
 
-To contact me, reach out via email at (my@email.de).
+To contact me, reach out via email at (kontakt@dom-wuest.de).
