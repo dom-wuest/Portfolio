@@ -1,0 +1,49 @@
+{{ $title := .Site.Title }}
+{{ $logo := resources.GetMatch "logo.*" }}
+
+
+<section class="mx-auto flex max-w-screen-xl items-center justify-between p-4">
+  <a href="{{ .Site.BaseURL }}" class="flex items-center space-x-3">
+    {{ with $logo }}
+      {{ $logo = $logo.Filter (images.Process "resize 120x120 webp") }}
+      <img src="{{ $logo.RelPermalink }}" class="h-8 w-8" alt="Logo" />
+    {{ end }}
+    <span class="self-center whitespace-nowrap text-2xl font-semibold text-slate-700 dark:text-slate-400">
+      {{ $title }}
+    </span>
+  </a>
+  <div class="mt-4 flex items-center justify-center space-x-8">
+    {{ if .IsTranslated }}
+      {{ range .Translations }}
+        {{ $linkurl := .Permalink}}
+        <a class="link" href="{{ $linkurl }}" aria-label="language">
+          <span class="nav_svg">
+            <svg viewBox="0 0 24 24" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M9 2.25a.75.75 0 0 1 .75.75v1.506a49.384 49.384 0 0 1 5.343.371.75.75 0 1 1-.186 1.489c-.66-.083-1.323-.151-1.99-.206a18.67 18.67 0 0 1-2.97 6.323c.318.384.65.753 1 1.107a.75.75 0 0 1-1.07 1.052A18.902 18.902 0 0 1 9 13.687a18.823 18.823 0 0 1-5.656 4.482.75.75 0 0 1-.688-1.333 17.323 17.323 0 0 0 5.396-4.353A18.72 18.72 0 0 1 5.89 8.598a.75.75 0 0 1 1.388-.568A17.21 17.21 0 0 0 9 11.224a17.168 17.168 0 0 0 2.391-5.165 48.04 48.04 0 0 0-8.298.307.75.75 0 0 1-.186-1.489 49.159 49.159 0 0 1 5.343-.371V3A.75.75 0 0 1 9 2.25ZM15.75 9a.75.75 0 0 1 .68.433l5.25 11.25a.75.75 0 1 1-1.36.634l-1.198-2.567h-6.744l-1.198 2.567a.75.75 0 0 1-1.36-.634l5.25-11.25A.75.75 0 0 1 15.75 9Zm-2.672 8.25h5.344l-2.672-5.726-2.672 5.726Z" clip-rule="evenodd" />
+            </svg>            
+          </span>
+        </a>
+      {{ end }}
+    {{ end }}
+    <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden" aria-label="hamburger-button">
+      <div
+        class="absolute top-4 -mt-0.5 h-[3px] w-8 rounded bg-slate-700 transition-all duration-500 before:absolute before:h-[3px] before:w-8 before:-translate-x-4 before:-translate-y-2.5 before:rounded before:bg-slate-700 before:transition-all before:duration-500 before:content-[''] after:absolute after:h-[3px] after:w-8 after:-translate-x-4 after:translate-y-2.5 after:rounded after:bg-slate-700 after:transition-all after:duration-500 after:content-[''] dark:bg-slate-400 before:dark:bg-slate-400 after:dark:bg-slate-400"></div>
+    </button>
+    <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+      {{ range site.Menus.main }}
+        <a href="{{ .URL }}" class="px-3 py-2 text-slate-700 hover:text-indigo-500 md:p-0 dark:text-slate-400">
+          {{ .Name }}
+        </a>
+      {{ end }}
+    </nav>
+  </div>
+</section>
+<section id="mobile-menu" class="absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-neutral-100 text-4xl dark:bg-neutral-800">
+  <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+    {{ range site.Menus.main }}
+      <a href="{{ .URL }}" class="px-3 py-2 text-center text-slate-700 hover:text-indigo-500 md:p-0 dark:text-slate-400">
+        {{ .Name }}
+      </a>
+    {{ end }}
+  </nav>
+</section>
