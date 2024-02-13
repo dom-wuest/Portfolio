@@ -46,6 +46,7 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+          lfs: true
 
       # Setup Go. Remember to keep the version up to date with your local build environment
       - name: Setup Go
