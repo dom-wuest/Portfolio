@@ -64,7 +64,7 @@ links:
 ## OpenGraph & Twitter Cards
 ###############################
 
-title: Portfolio
-description: "Site build with Qubt & Hugo"
+title: Dominik Wüst
+description: "Learn more about my projects and research."
 images:
-  - thumbnail.png
+  - logo.png
