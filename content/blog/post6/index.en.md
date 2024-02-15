@@ -15,7 +15,7 @@ authors:
 
 ## Custom sleeved cables
 
-My PC case, the Phanteks Enthoo Evolv, features tempered glass panels on both sides. This means there is no place to hide cables and without proper cable management, my PC looked like a mess. To fix this, I purchased a modular power supply unit from Corsair and created my own set of cables. Each wire is cut to length individually and routed using custom brackets made from aluminium. This way, no wires are loose and there is no leftover cables that need to be stashed somewhere. Both ends were crimped and connected to ATX/Molex terminals.
+My PC case, the Phanteks Enthoo Evolv, features tempered glass panels on both sides. This means there is no place to hide cables and without proper cable management, my PC looked like a mess. To fix this, I purchased a modular power supply unit from Corsair and created my own set of cables. Each wire was cut to length individually and routed using custom brackets made from aluminium. This way, no wires are loose and there is no leftover cables that need to be stashed somewhere. Both ends were crimped and connected to ATX/Molex terminals.
 
 To improve the looks even further, each wire was sleeved in either red or carbon grey to go along with the color theme of the hardware.
 

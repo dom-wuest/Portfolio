@@ -1,9 +1,9 @@
 {{ $title := .Site.Title }}
 {{ $logo := resources.GetMatch "logo.*" }}
-
+{{ $tr := .Site.LanguagePrefix }}
 
 <section class="mx-auto flex max-w-screen-xl items-center justify-between p-4">
-  <a href="{{ .Site.BaseURL }}" class="flex items-center space-x-3">
+  <a href="{{ .Site.BaseURL }}{{ $tr }}/" class="flex items-center space-x-3">
     {{ with $logo }}
       {{ $logo = $logo.Filter (images.Process "resize 120x120 webp") }}
       <img src="{{ $logo.RelPermalink }}" class="h-8 w-8" alt="Logo" />

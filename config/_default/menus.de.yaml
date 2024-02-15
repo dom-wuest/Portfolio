@@ -4,11 +4,11 @@
 
 main:
 - name: Startseite
-  url: /
+  url: /de/
   weight: 10
 - name: Projekte & Forschung
-  url: /blog/
+  url: /de/blog/
   weight: 20
 - name: Über Mich
-  url: /about/
+  url: /de/about/
   weight: 30
