@@ -12,7 +12,7 @@ title: Dominik Wüst
 enableEmoji: true
 disableKinds: ['taxonomy', 'term']
 
-defaultContentLanguage: de
+defaultContentLanguage: en
 
 languages:
   de:
@@ -21,6 +21,9 @@ languages:
     languageCode: de-DE
     languageDirection: ltr
     languageName: Deutsch
+    params:
+      bio: Biografie
+      publishedwith: Erstellt mit
     weight: 1
   en:
     contentDir: content/en
@@ -28,4 +31,7 @@ languages:
     languageCode: en-US
     languageDirection: ltr
     languageName: English
+    params:
+      bio: Biography
+      publishedwith: Published with
     weight: 2
