@@ -1,38 +1,38 @@
 ---
 title: Real Time Neural Path Guiding
 subtitle: "Bachelorarbeit"
-summary: A novel neural network based path guiding technique for realtime path tracing. A small neural network is trainied in online fashion to approximate incident radiance in world space. This information is used for guiding scatter rays in future frames.
+summary: Eine neuartige, auf einem Neuronalen Netz basierende Path-Guiding Technik für echtzeit Path-Tracing. Ein kleines Neuronales Netz wird online trainiert um die eingehende Beleuchtung an Oberflächen in der Szene zu approximieren. Diese Informationen werden zum Path-Guiding der Strahlen in zukünftigen Bildern verwendet.
 date: 2023-03-30
 cardimage: bachelorthesis_card.png
 featureimage: bachelorthesis.png
-caption: Title page and a section about activation functions for the neural network from my bachelors thesis.
+caption: Titelseite und ein Ausschnitt über Aktivierungsfunktionen des Neuronalen Netzes aus meiner Bachelorarbeit.
 authors:
   - Dominik: author.png
 links:
   - github: https://github.com/dom-wuest/NeuralPathGuiding
 ---
 
-## Abstract
-With modern GPUs supporting hardware-accelerated ray tracing, we do have the ability to generate path-traced images in realtime. Due to the time constraint, the amount of rays per pixel and frame is limited to a few. This leads to high variance in the Monte Carlo estimate for the Radiative Transfer Equation. In this work we discuss state of the art techniques for reducing variance of direct and indirect illumination with the main focus on rendering dynamic scenes in realtime.
+## Abstrakt
+Da moderne Grafikkarten hardwarebeschleunigtes Raytracing unterstützen, haben wir die Möglichkeit, Path-Tracing zur Bilderzeugung in echtzeit einzusetzen. Aus Zeitgründen ist die Anzahl der Strahlen pro Pixel und Frame stark beschränkt. Dies führt zu einer hohen Varianz in der Monte-Carlo-Schätzung für die Radiative-Transfer-Gleichung. In dieser Arbeit werden moderne Techniken zur Reduzierung der Varianz für direkte und indirekte Beleuchtung diskutiert. Der Schwerpunkt liegt auf der Darstellung dynamischer Szenen in Echtzeit.
 
-We propose a novel path guiding technique to reduce variance by learning an estimate of the 5D incident radiance field within the scene. A multilayer perceptron is used to partition the spatial domain and a parameterized model is fitted to approximate the directional domain of this radiance field. During rendering this estimated radiance field can be used to guide the paths towards directions of high incident radiance. As a parameterized model we examine the use of von Mises-Fisher distributions and derive a loss function to train the multilayer perceptron in online fashion. We evaluate different strategies to collect training data and test our approach on static and dynamic scenes.
+Wir schlagen eine neuartige Path-Guiding Technik vor, um die Varianz zu reduzieren, indem wir eine Schätzung der einfallenden Beleuchtung innerhalb der Szene lernen. Ein Multilayer-Perceptron wird verwendet, um den räumlichen Bereich der Szene zu unteteilen, und ein parametrisiertes Modell wird angepasst, um die Verteilung der Beleuchtung an einem Oberflächenpunkt anzunähern. Während des Renderns kann diese Verteilung verwendet werden, um die Strahlen in Richtungen mit starker einfallender Beleuchtung zu lenken. Als parametrisiertes Modell untersuchen wir die Verwendung von Mises-Fisher-Verteilungen und leiten eine Verlustfunktion her, um das Multilayer-Perceptron online zu trainieren. Wir evaluieren verschiedene Strategien zum Sammeln von Trainingsdaten und testen unseren Ansatz an statischen und dynamischen Szenen.
 
-## Concept
-In 2021 Muller et al. proposed a realtime radiance caching technique which uses a small multilayer perceptron to cache radiance. To see their paper click [here](https://research.nvidia.com/publication/2021-06_real-time-neural-radiance-caching-path-tracing). Their neural network implementation is fast enough to be trained and queried every single frame. In my thesis I use the same neural network approach, however instead of caching the radiance at a point in the scene, the multilayer perceptron learns the distribution of incident radiance at this point. This information can be used to guide future rays in more promissing directions and thus reduce noice in the final render. Over the course of roughly 60 frames, the multilayer perceptron is able to learn an approximation of the radiance distibution in a simple scenes and thus reduce the noise produced by the path tracer.
+## Konzept
+Im Jahr 2021 haben Müller et al. eine Radiance-Caching Technik vorgestellt, bei der ein kleines Multilayer-Perceptron die Radianz in echtzeit lernen kann. Um diese Arbeit zu sehen, klicken Sie [hier](https://research.nvidia.com/publication/2021-06_real-time-neural-radiance-caching-path-tracing). Die Implementierung des Neuronalen Netzes von Müller ist schnell genug, um das Netz in jedem Bild zu trainieren und auszuwerten. In meiner Abchlussarbeit verwende ich den selben Ansatz, allerdings lernt das Multilayer-Perceptron die richtungsabhängige Verteilung der einfallenden Beleuchtung an einer Oberfläche. Im Gegensatz zur gesamten, über die Hemisphere integrierten Beleuchtung, wie sie bei bei Müllers Arbeit gelernt wird, kann die richtungsabhägige Verteilung genutzt werden, um zukünftige Strahlen in vielversprechende Richtungen zu lenken. Im Verlauf von etwa 60 Bildern ist das Multilayer-Perceptron in der Lage, eine Annäherung der Beleuchtungsverteilung in einfachen Szenen zu lernen, und damit das Rauschen des Path-Tracers zu reduzieren.
 
-{{< figSingle src="images/learning_cornell.png" caption="A neural network learns the direction to the light source over time. This information can be used to reduce noise of a path tracer." >}}
+{{< figSingle src="images/learning_cornell.png" caption="Ein Neuronales Netz lernt im laufe der Zeit die Richtun zur Lichtquelle. Diese Information wird verwendet, um das Rauschen des Path-Tracers zu reduzieren." >}}
 
-## Limitations and Future Work
-In the current state the implementation suffers from numerical instability which causes flickering and in some cases introduces NaNs in the calculations. This is most likely due to the noisy samples used for training. As shown in my thesis, changes to the loss function reduced these issues. However, there is room for improvement, so further research is needed.
+## Grenzen und zukünftige Arbeit
+Im aktuellen Zustand leidet die Implementierung unter numerischer Instabilität, welche zu Flackern führt und in einigen Fällen NaNs in den Berechnungen verursacht. Dies ist höchstwahrscheinlich auf die verrauschten Trainingsdaten zurückzuführen. Wie in meiner Abschlussarbeit gezeigt, konnten diese Probleme durch Änderungen an der Verlustfunktion reduziert werden. Es gibt jedoch Raum für Verbesserungen, sodass weitere Forschung erforderlich ist.
 
-The use of a single-lobe von-Mises-Fisher distribution is not sufficient for representing more complex lighting. The use of multiple lobes or other distributions could improve the quality of the approximation sicnificantly. As shown below, in spots that are illuminated from to opposing light sources, the vMF approximates the incident radiance poorly. This results in a noisy output in those areas.
+Die Verwendung einer einkeuligen von-Mises-Fisher-Verteilung reicht für die Darstellung komplexerer Beleuchtung nicht aus. Die Kombination mehrerer solcher vMF oder anderer Verteilungen könnte die Qualität der Approximation erheblich verbessern. Wie unten gezeigt, nähert sich der vMF bei Punkten, die von entgegengesetzten Lichtquellen beleuchtet werden, der einfallenden Strahlungsdichte nur schlecht an. Dies führt in diesen Bereichen zu einer verrauschten Ausgabe.
 
-{{< figSingle src="images/vMF_limits.png" caption="Single-lobe vMF poorly approximates illumination from opposing light sources." >}}
+{{< figSingle src="images/vMF_limits.png" caption="Einfache vMF approximiert die einfallende Beleuchtung von zwei gegenüberliegenden Lichtquellen nur schlecht." >}}
 
-## Acknowledgement
+## Würdigung
 
-The codebase for my thesis was kindly provided by Egor Feklisov and Dmitrii Klepikov from Moscow State University. Their work got me setup for my research quickly and allowed many interesting experiments.
+Die Codebasis für meine Arbeit wurde freundlicherweise von Egor Feklisov und Dmitrii Klepikov von der Moskauer Staatsuniversität zur Verfügung gestellt. Ihre Arbeit hat mich schnell auf meine Forschung vorbereitet und viele interessante Experimente ermöglicht.
 
-Special thanks to Mikhail Dereviannykh and Dr. Johannes Schudeiske, who gave me this amazing opportunity and supported me with valuable advice during my research!
+Besonderer Dank geht an Mikhail Dereviannykh und Dr. Johannes Schudeiske, die mir diese großartige Gelegenheit gegeben und mich während meiner Recherche mit wertvollen Ratschlägen unterstützt haben!
 
-Check out their research at (https://www.mishok43.com/home) and (https://jo.dreggn.org/home/)!
+Schauen Sie sich ihre Forschung unter (https://www.mishok43.com/home) und (https://jo.dreggn.org/home/) an!
