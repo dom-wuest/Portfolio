@@ -23,8 +23,10 @@ Um das Aussehen noch weiter zu verbessern, wurde jedes Kabel entweder in Rot ode
 
 ## Hardline-Wasserkühlung
 
-Kommt noch...
+Als PC Enthusiast war es schon einige Jahre mien Traum, eine Wasserkühlung in meinen PC einzubauen. Während der Corona-Pandemie konnte ich mir dann endlich die nötigen Komponenten leisten. Ich habe mich für einen CPU-Kühlblock von Phanteks, sowie einen Radiator und eine Pumpe von Singularity Computers entschieden. Diese drei Komponenten habe ich mit Acryl-Rohren von Alphacool verbunden. Dazu wurden die Rohre erhitzt, von Hand an den passenden Stellen gebogen und auf die richtige länge gekürzt. Auf diesem Weg wird die Kühlflüssigkeit von der Pumpe zum CPU-Wasserblock transportiert, dort absorbiert es die Abwärme der CPU. Anschließend fließt ddie Kühlflüssigkeit durch den Radiator, welcher im Deckel verbaut ist. Dort wird die Wärme an die Umgebungsluft abgegeben. Der Kühlkreislauf ist dann zur Pumpe hin geschlossen. Die Installation der Komponenten hat einige Stunden gedauert, insbesondere das Biegen und zurechtschneiden der Acryl-Rohre war aufwändig. Nachdem ich den Kühlkreislauf auf undichte Stellen geprüft (und dabei ein Leck an der Pumpe abgedichtet) habe, ist die Wasserkühlung nun mit blutroter Flüssigkeit in Betrieb.
 
 ## RGB-Beleuchtung mit einem ESP32-Microcontroller
 
-Kommt auch noch...
+Um die handgefertigten Kabel und die Wasserkühlung perfekt in Szene zu setzen, habe ich RGB Beleuchtungen verbaut. Da das Innere des Gehäuses sowie die PC Komponenten überwiegend in Schwarz gehalten sind, wird viel Licht absorbiert und es sind dahre viele LEDs nötig. Am Radiator im Deckel habe ich daher drei RGB Lüfter von Corsair installiert. Dadurch werden Mainboard und Grafikkarte gleichmäßg beleuchtet. Im unteren Gehäuseteil habe ich ebenfalls einen LED Streifen angebracht. Da mein Arbeitsspeicher nicht mit RGB Beleuchtung ausgestattet war, habe ich DIY Heatsinks für diesen gekauft. Somit hat nun auch mein Arbeitsspeicher LED Beleuchtung.
+
+Um die ganzen RGB LEDs zu synchronisieren habe ich einen ESP32 Microcontroller verwendet. Dieser ist im Deckel verbaut und über die interne USB Schnittstelle mitr dem Mainboard verbunden. Der Microcontroller steuert die Beleuchtung der Lüfter, Arbeitsspeicher und LED-Streifen. Über die USB Verbindung kann mithilfe eine C# Desktopanwendung zwischen verschiedenen Animationen und Farben gewechselt werden.

@@ -23,8 +23,8 @@ To improve the looks even further, each wire was sleeved in either red or carbon
 
 ## Hardline water cooling
 
-to be continued...
+As an modding enthusiast, upgrading to a watercooling solution has been a dream of mine for years. In 2020 I was able to afford the necessary components like a CPU waterblock from Phanteks, a radiator and a pump from Singularity Computers. These three components were connected using hardline tubes from Alphacool. These were heated, bent and cut by hand to fit my build. This way the coolant is moved from the pump to the CPU waterblock, where it absorbs the heat from the CPU. The coolant moves through the radiator at the top of my case to disapate the heat to the surrounding air. Then the coolant returns to the pump again. It took a couple hours to get all the compoponents installed and to prepare the tubes to my liking. After leak testing (and fixing a small leak near the pump) the watercooling loop was up and running with blood red coolant! 
 
 ## RGB lighting with ESP32 microcontroller
 
-to be continued as well...
+To put the custom cables and the watercooling loop into the perfect light, I installed a bunch of RGB lights. As the case interior and components are mostly black, a few lights were not able to illuminate the PC as most of the light is absorbed. I added three Corsair RGB fans to the radiator at the top. These ensured even lighting to the mainboard and GPU. LEDs at the bottom were added as well. My RAM did not feature any RGB lighting, so I purchased DIY RAM heatsinks to replace the stock ones. With those I added RGB to my RAM as well. To sync all of these I used an ESP32 microcontroller hidden underneath the top panel of my case. This microcontroller is connected to the internal USB of the mainboard and is responsible for the lighting of the fans, RAM and leds at the bottom. The USB connection is used to change colors and animations of the lighting from a desktop application written in C#.

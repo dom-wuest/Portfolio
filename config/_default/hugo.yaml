@@ -24,6 +24,7 @@ languages:
     params:
       bio: Biografie
       publishedwith: Erstellt mit
+      youmightlike: Inspiriert durch
     weight: 1
   en:
     contentDir: content/en
@@ -34,4 +35,5 @@ languages:
     params:
       bio: Biography
       publishedwith: Published with
+      youmightlike: Inspired by
     weight: 2
