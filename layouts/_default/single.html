@@ -46,7 +46,7 @@
           <img class="mt-4 h-full w-full object-cover" src="{{ $featureimage.RelPermalink }}" alt="feature image" height="{{ $featureimage.Height }}" width="{{ $featureimage.Width }}" />
           {{ with $featuredcaption }}
             <span class="mb-4 mt-1 text-center text-sm text-slate-700 dark:text-slate-200">
-              {{ $featuredcaption | emojify }}
+              {{ $featuredcaption | markdownify | emojify }}
             </span>
           {{ end }}
         </div>
@@ -54,6 +54,10 @@
 
 
       <span class="prose prose-slate break-words text-lg text-slate-700 dark:prose-invert prose-pre:max-w-[90vw] md:prose-pre:max-w-screen-md dark:text-slate-200">
+        <h2>TLDR;</h2>
+        {{ .Summary | emojify }}
+        <br>
+
         {{ .Content }}
       </span>
     </article>

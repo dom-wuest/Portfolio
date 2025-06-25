@@ -35,7 +35,7 @@
     </div>
     {{ with $figCaption }}
       <span class="mt-6 mb-4 text-center text-sm text-slate-700 dark:text-slate-200">
-        {{ . | emojify }}
+        {{ . | markdownify | emojify }}
       </span>
     {{ end }}
   </div>

@@ -1,7 +1,7 @@
 ---
-title: 2D Strömungssimulation auf der GPU
-subtitle: Erstellt mit Vulkan Compute-Shadern und optimiert mit NSight.
-summary: Eine gitterbasierte 2D-Strömungssimulation, die mit Vulkan Compute-Shadern erstellt wurde, um GPU-Hardware zu nutzen.
+title: 2D Fluid Simulation on the GPU
+subtitle: Practical course at KIT
+summary: A 2D grid based fluid simulation built with Vulkan compute shaders to utilize GPU hardware.
 date: 2023-08-02
 cardimage: fluid_card.png
 featureimage: fluid.png
@@ -12,9 +12,6 @@ links:
   - github: https://github.com/dom-wuest/FluidSim2D
   - pdf: https://github.com/dom-wuest/FluidSim2D/raw/main/docs/TechnicalReport.pdf?download=
 ---
-
-** Translation coming soon **
-
 ## About this project
 This project is focused on implementing and optimizing a fluid simulation using Vulkan compute shaders. A grid-based approach has been taken as this maps to GPU memory efficiently and allows for optimizations later on.
 The simulation domain is limited to 2D as this simplifies visualization. In this project, compute and present queues are created, and the simulation steps are synchronized to be executed in the correct order. A simulation step is split into advection, pressure projection and visualization. These steps are implemented in different compute shaders which require synchronization as well. A naive implementation of these shaders was used for reference when optimizing performance. For this, a detailed performance analysis was performed using Nvidia Nsight Graphics. Besides optimizing shader dispatches in general by supporting multiple frames in flight, the pressure projection shader was optimized specifically with memory throughput in mind. The performance analysis showed that this shader dominated the duration of a simulation step. The shader itself is memory-bound as it propagates pressure values through the grid iteratively. Here we see a lot of potential for optimization and implemented different techniques such as ghost zoning, kernel decomposition and loop unrolling to increase performance. For technical details and the results of our performance analysis, refer to the [technical report](https://github.com/dom-wuest/FluidSim2D/blob/main/docs/TechnicalReport.pdf).

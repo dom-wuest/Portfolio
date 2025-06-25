@@ -6,9 +6,15 @@ main:
 - name: Startseite
   url: /de/
   weight: 10
-- name: Projekte & Forschung
-  url: /de/blog/
+- name: Forschung
+  url: /de/research/
   weight: 20
+- name: Entwicklung
+  url: /de/development/
+  weight: 30
+- name: Blog
+  url: /de/blog/
+  weight: 40
 - name: Über Mich
   url: /de/about/
-  weight: 30
+  weight: 50

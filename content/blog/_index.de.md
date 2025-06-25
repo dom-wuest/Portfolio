@@ -1,3 +1,3 @@
 ---
-title: Projekte & Forschung
+title: Blog
 ---
