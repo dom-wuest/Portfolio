@@ -1,0 +1,26 @@
+{{/* Enable a svg graphics to be loaded from a subfolder within a blog post.
+  I.e. `./content/blog/blogpost/images/img.svg`.
+  Function call: "{{< figSVG src="folderName/imageName">}}"
+  Optionally pass a general figure caption as "caption".
+*/}}
+
+{{/* load variables */}}
+{{ $page := .Page }}
+{{ $path := .Get "src" }}
+{{ $figCaption := .Get "caption" | default "" }}
+
+{{ $images := $page.Resources.Match $path }}
+
+<div class="flex flex-col">
+  {{ range $image := $images }}
+    <div class="text-slate-700 dark:text-slate-200">
+      {{ $image.Content | safeHTML }}
+    </div>
+  {{ end }}
+
+  {{ with $figCaption }}
+    <span class="mb-4 text-center text-sm text-slate-700 dark:text-slate-200">
+      {{ . | markdownify | emojify }}
+    </span>
+  {{ end }}
+</div>
