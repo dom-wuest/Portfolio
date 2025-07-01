@@ -9,8 +9,12 @@ caption: Wind tunnel scene simulating turbulent flow around a circle.
 authors:
   - Dominik: author.png
 links:
-  - github: https://github.com/dom-wuest/FluidSim2D
-  - pdf: https://github.com/dom-wuest/FluidSim2D/raw/main/docs/TechnicalReport.pdf?download=
+  - github: 
+      url: https://github.com/dom-wuest/FluidSim2D
+      label: Source code
+  - pdf: 
+      url: https://github.com/dom-wuest/FluidSim2D/raw/main/docs/TechnicalReport.pdf?download=
+      label: Technical report
 ---
 ## About this project
 This project is focused on implementing and optimizing a fluid simulation using Vulkan compute shaders. A grid-based approach has been taken as this maps to GPU memory efficiently and allows for optimizations later on.

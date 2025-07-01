@@ -9,8 +9,12 @@ caption: Wind tunnel scene simulating turbulent flow around a circle.
 authors:
   - Dominik: author.png
 links:
-  - github: https://github.com/dom-wuest/FluidSim2D
-  - pdf: https://github.com/dom-wuest/FluidSim2D/raw/main/docs/TechnicalReport.pdf?download=
+  - github: 
+      url: https://github.com/dom-wuest/FluidSim2D
+      label: Quellcode
+  - pdf: 
+      url: https://github.com/dom-wuest/FluidSim2D/raw/main/docs/TechnicalReport.pdf?download=
+      label: Technischer Bericht
 ---
 
 ** Translation coming soon **

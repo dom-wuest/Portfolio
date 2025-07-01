@@ -9,7 +9,9 @@ caption: "3D Strömungssimulation mit einem CNN ([Link zur Bildquelle](https://g
 authors:
   - Dominik: author.png
 links:
-  - pdf: /files/Proseminar_Learning_Surrogate_Models_For_Fluid_Simulation.pdf
+  - pdf: 
+      href: /files/Proseminar_Learning_Surrogate_Models_For_Fluid_Simulation.pdf
+      label: Seminararbeit (de)
 ---
 
 ## Literaturübersicht

@@ -9,7 +9,9 @@ caption: "3D fluid simulation using a CNN ([Link to image source](https://github
 authors:
   - Dominik: author.png
 links:
-  - pdf: /files/Proseminar_Learning_Surrogate_Models_For_Fluid_Simulation.pdf
+  - pdf: 
+      href: /files/Proseminar_Learning_Surrogate_Models_For_Fluid_Simulation.pdf
+      label: Seminar paper (de)
 ---
 
 ## Literature Review

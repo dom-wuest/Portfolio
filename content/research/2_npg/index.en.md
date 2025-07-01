@@ -4,18 +4,22 @@ subtitle: "Bachelor thesis"
 summary: A novel neural network based path guiding technique for realtime path tracing. A small neural network is trainied in online fashion to approximate incident radiance in world space. This information is used for guiding scatter rays in future frames.
 date: 2023-03-30
 cardimage: bachelorthesis_card.png
-featureimage: bachelorthesis.png
-caption: Title page and a section about activation functions for the neural network from my bachelors thesis.
+featureimage: bachelorthesis_card_original.png
+caption: Comparison of my Neural Path Guiding implementation with classical path tracing (left) and the SOTA RTXDI from Nvidia (right).
 authors:
   - Dominik: author.png
 links:
-  - github: https://github.com/dom-wuest/NeuralPathGuiding
+  - github: 
+      url: https://github.com/dom-wuest/NeuralPathGuiding
+      label: Source code
 ---
 
 ## Abstract
 With modern GPUs supporting hardware-accelerated ray tracing, we do have the ability to generate path-traced images in realtime. Due to the time constraint, the amount of rays per pixel and frame is limited to a few. This leads to high variance in the Monte Carlo estimate for the Radiative Transfer Equation. In this work we discuss state of the art techniques for reducing variance of direct and indirect illumination with the main focus on rendering dynamic scenes in realtime.
 
 We propose a novel path guiding technique to reduce variance by learning an estimate of the 5D incident radiance field within the scene. A multilayer perceptron is used to partition the spatial domain and a parameterized model is fitted to approximate the directional domain of this radiance field. During rendering this estimated radiance field can be used to guide the paths towards directions of high incident radiance. As a parameterized model we examine the use of von Mises-Fisher distributions and derive a loss function to train the multilayer perceptron in online fashion. We evaluate different strategies to collect training data and test our approach on static and dynamic scenes.
+
+{{< figSingle src="images/bachelorthesis.png" caption="Title page and a section about activation functions for the neural network from my bachelors thesis." >}}
 
 ## Concept
 In 2021 Muller et al. proposed a realtime radiance caching technique which uses a small multilayer perceptron to cache radiance. To see their paper click [here](https://research.nvidia.com/publication/2021-06_real-time-neural-radiance-caching-path-tracing). Their neural network implementation is fast enough to be trained and queried every single frame. In my thesis I use the same neural network approach, however instead of caching the radiance at a point in the scene, the multilayer perceptron learns the distribution of incident radiance at this point. This information can be used to guide future rays in more promissing directions and thus reduce noice in the final render. Over the course of roughly 60 frames, the multilayer perceptron is able to learn an approximation of the radiance distibution in a simple scenes and thus reduce the noise produced by the path tracer.

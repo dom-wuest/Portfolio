@@ -5,11 +5,19 @@
 @tailwind utilities;
 
 .link {
-  @apply w-10 h-10 m-1 bg-transparent transform hover:scale-125 transition ease-out duration-300;
+  @apply m-1 bg-transparent transform hover:scale-125 transition ease-out duration-300;
 }
 
 .link_svg {
-  @apply rounded-full fill-slate-700 dark:fill-slate-50
+  @apply rounded-full fill-slate-700 dark:fill-slate-50;
+}
+
+.link_label {
+  @apply bg-neutral-100 dark:bg-neutral-800;
+}
+
+.link_label::before {
+  @apply bg-neutral-100 dark:bg-neutral-800;
 }
 
 .nav_svg {
