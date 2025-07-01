@@ -1687,9 +1687,11 @@ video {
 
 .link_label {
   padding-left: 1.5rem;
-  padding-right: 1rem;
-  height: 2.0rem;
+  padding-right: 0.5rem;
+  height: 1.6rem;
   margin-left: -1rem;
+  margin-top: 0.2rem;
+  padding-top: 0.1rem;
   background-color: #334155;
   text-justify: center;
   text-align: center;

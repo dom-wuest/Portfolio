@@ -22,7 +22,7 @@
 
           <!-- Container for list of links to documents, github, ... -->
           {{ if .Params.Links }}
-          <div class="flex space-x-4">
+          <div class="flex justify-between flex-wrap">
             {{ range $links := .Params.Links }}
               {{ range $type, $meta := $links }}
                 {{ $href := "" }}

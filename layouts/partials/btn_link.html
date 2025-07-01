@@ -12,6 +12,6 @@
 <!-- Link panel with label and icon -->
 <a class="link flex" href="{{ $href }}" target="_blank" rel="me noopener noreferrer" aria-label="button">
     <span class="link_svg">{{ .Content | safeHTML }}</span>
-    <span class="link_label text-lg text-slate-200 dark:text-slate-700">{{ $label }}</span>
+    <span class="link_label text-sm text-slate-200 dark:text-slate-700">{{ $label }}</span>
 </a>
 {{ end }}
