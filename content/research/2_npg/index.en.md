@@ -12,6 +12,12 @@ links:
   - github: 
       url: https://github.com/dom-wuest/NeuralPathGuiding
       label: Source code
+  - pdf: 
+      url: /files/Real_Time_Neural_Path_Guiding.pdf
+      label: Thesis
+  - pdf: 
+      url: /files/RealTimeNeuralPathGuidingPresentation.pdf
+      label: Slides
 ---
 
 ## Abstract
