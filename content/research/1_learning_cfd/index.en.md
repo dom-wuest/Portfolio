@@ -10,7 +10,7 @@ authors:
   - Dominik: author.png
 links:
   - pdf: 
-      href: /files/Proseminar_Learning_Surrogate_Models_For_Fluid_Simulation.pdf
+      url: /files/Proseminar_Learning_Surrogate_Models_For_Fluid_Simulation.pdf
       label: Seminar paper (de)
 ---
 

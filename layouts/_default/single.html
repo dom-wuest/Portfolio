@@ -32,7 +32,7 @@
                   {{ $href = $meta }}
                   {{ $label = $type }}
                 {{ else }}
-                  {{ $href = $meta.href }}
+                  {{ $href = $meta.url }}
                   {{ $label = $meta.label | default $type }}
                 {{ end }}
                 <!-- Link panel with label and icon -->
