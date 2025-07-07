@@ -1,11 +1,11 @@
 ---
 title: 2D Strömungssimulation auf der GPU
 subtitle: Praktikum am KIT
-summary: Eine gitterbasierte 2D-Strömungssimulation, die mit Vulkan Compute-Shadern erstellt wurde, um GPU-Hardware zu nutzen.
+summary: Eine gitterbasierte 2D-Strömungssimulation, die mit Vulkan Compute-Shadern erstellt wurde, um GPU-Hardware zu nutzen. Eine ausführliche Leistungsanalyse wurde durchgeführt, um Shader-Dispatches und den Speicher-Durchsatz zu optimieren. Ghost-Zoning und Kernel-Dekomposition wurden im Shader für die Druckprojektion implementiert.
 date: 2023-08-02
 cardimage: fluid_card.png
 featureimage: fluid.png
-caption: Wind tunnel scene simulating turbulent flow around a circle.
+caption: Windkanal-Szene, die turbulente Strömung um ein rundes Hindernis simuliert.
 authors:
   - Dominik: author.png
 links:
@@ -14,7 +14,7 @@ links:
       label: Quellcode
   - pdf: 
       url: https://github.com/dom-wuest/FluidSim2D/raw/main/docs/TechnicalReport.pdf?download=
-      label: Technischer Bericht
+      label: Technischer Bericht (en)
 ---
 
 ** Translation coming soon **

@@ -1,11 +1,11 @@
 ---
 title: 2D Fluid Simulation on the GPU
 subtitle: Practical course at KIT
-summary: A 2D grid based fluid simulation built with Vulkan compute shaders to utilize GPU hardware.
+summary: A 2D grid-based fluid simulation built with Vulkan compute shaders to utilize GPU hardware. A thorough performance analysis was conducted to optimize shader dispatches and memory throughput. Ghost zoning and kernel decomposition were implemented in the pressure projection shader.
 date: 2023-08-02
 cardimage: fluid_card.png
 featureimage: fluid.png
-caption: Wind tunnel scene simulating turbulent flow around a circle.
+caption: Wind tunnel scene simulating turbulent flow around a circular obstacle.
 authors:
   - Dominik: author.png
 links:
