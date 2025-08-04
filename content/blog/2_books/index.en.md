@@ -2,8 +2,7 @@
 title: Book Recommendations
 subtitle: "Books I enjoyed reading"
 summary: A collection of books that I found interesting and enjoyable to read. These books cover a variety of topics, from technology and science to personal development and fantasy.
-date: 2025-07-08
-cardimage: modding_card.jpeg
+date: 2025-08-02
 authors:
   - Dominik: author.png
 ---

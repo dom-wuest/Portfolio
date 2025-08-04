@@ -2,8 +2,7 @@
 title: Buchempfehlungen
 subtitle: "Bücher, die ich gerne gelesen habe"
 summary: Eine Sammlung von Büchern, die ich interessant und angenehm zu lesen fand. Diese Bücher decken eine Vielzahl von Themen ab, von Technologie und Wissenschaft bis hin zu persönlicher Entwicklung und Fantasy.
-date: 2025-07-08
-cardimage: modding_card.jpeg
+date: 2025-08-02
 authors:
   - Dominik: author.png
 ---
