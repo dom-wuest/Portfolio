@@ -6,6 +6,7 @@ date: 2023-08-02
 cardimage: fluid_card.png
 featureimage: fluid.png
 caption: Windkanal-Szene, die turbulente Strömung um ein rundes Hindernis simuliert.
+level: university
 authors:
   - Dominik: author.png
 links:

@@ -6,6 +6,7 @@ date: 2025-04-26
 cardimage: realtime_rendering_card.png
 featureimage: realtime_rendering_card.png
 caption: Village-Scene rendered with ReSTIR.
+level: university
 authors:
   - Dominik: author.png
 ---

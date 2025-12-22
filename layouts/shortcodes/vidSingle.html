@@ -1,0 +1,26 @@
+{{- /*
+  vidSingle shortcode
+
+  Usage examples:
+  - Positional: {{< vidSingle "https://.../video.mp4" >}}
+  - Named: {{< vidSingle src="https://.../video.mp4" poster="/images/poster.png" width="100%" >}}
+
+  Parameters:
+  - src:    video URL (positional 0 or named)
+  - poster: optional poster image URL
+  - width:  optional width (default: 100%)
+  - type:   optional MIME type (default: video/mp4)
+*/ -}}
+{{- $src := .Get "src" | default (.Get 0) -}}
+{{- if not $src }}
+  {{ errorf "vidSingle shortcode: missing src parameter" }}
+{{- end -}}
+{{- $poster := .Get "poster" -}}
+{{- $width := .Get "width" | default "100%" -}}
+{{- $vtype := .Get "type" | default "video/mp4" -}}
+<p>
+  <video width="{{ $width }}" controls{{ if $poster }} poster="{{ $poster }}"{{ end }}>
+    <source src="{{ $src }}" type="{{ $vtype }}">
+    Your browser does not support the video tag.
+  </video>
+</p>

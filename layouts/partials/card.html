@@ -1,0 +1,39 @@
+{{- $page := . -}}
+{{ $cardimage := resources.GetMatch $page.Params.cardimage }}
+<a href="{{ $page.RelPermalink }}">
+  <div class="flex flex-col lg:flex-row lg:max-h-80 h-full w-full max-w-screen-lg flex-row rounded-xl bg-neutral-300 bg-clip-border text-slate-400 shadow-md dark:bg-neutral-700">
+    {{ with $cardimage }}
+      {{ $cardimage = $cardimage.Filter (images.Process "fit 600x400 Lanczos q80 webp" ) }}
+      <div class="m-0 lg:w-2/5 max-h-80 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-clip-border dark:bg-neutral-700">
+        <img src="{{ $cardimage.RelPermalink }}" alt="image" class="h-full w-full object-cover" />
+      </div>
+    {{ end }}
+    <div class="flex flex-col justify-between p-6">
+      <div>
+        <h4 class="mb-2 line-clamp-2 text-base font-semibold text-slate-700 antialiased md:text-2xl dark:text-slate-200">
+          {{ $page.Title }}
+        </h4>
+        <p class="mb-4 line-clamp-6 text-base text-slate-500 dark:text-slate-400">
+          <b>{{ $page.Params.subtitle | emojify }}</b><br>
+          {{ $page.Summary | emojify }}
+        </p>
+      </div>
+      <div class="flex flex-row justify-between">
+        <div class="flex items-center -space-x-3">
+          {{ range $authors := $page.Params.authors }}
+            {{ range $name, $image := $authors }}
+              {{ $imgPath := resources.GetMatch $image }}
+              {{ with $imgPath }}
+                {{ $imgPath = $imgPath.Filter (images.Process "resize 40x40 webp" ) }}
+                <img class="h-9 w-9 rounded-full border-2 border-slate-50 object-cover object-center" alt="{{ $name }}" src="{{ $imgPath.RelPermalink }}" />
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+        <div class="p-3 text-xs text-slate-500 dark:text-slate-400">
+          {{ $page.Date | time.Format ":date_medium" }}
+        </div>
+      </div>
+    </div>
+  </div>
+</a>

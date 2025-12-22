@@ -3,13 +3,13 @@
 type: misc
 
 # change these
-jobTitle: Software Entwickler
+jobTitle: Graphics & AI Researcher
 name: Dominik Wüst
 bio: true
 icon: ":coffee:"
 ---
 
-Ich spezialisiere mich in Computergrafik und Deep Learning, dabei liegt mein Fokus auf Echtzeitanwendungen. Aktuell studiere ich Informatik im Master am Karsruher Institut für Technologie.
+Ich spezialisiere mich in Computergrafik und Deep Learning, dabei liegt mein Fokus auf Echtzeitanwendungen. Aktuell schreibe ich meine Masterarbeit in Informatik am Karsruher Institut für Technologie.
 
 Mit 14 Jahren habe ich meine ersten Programmiererfahrungen mit einem LEGO Mindstorms Roboter gemacht. Während der Oberstufe am Technischen Gymnasium habe ich mehrere Projekte mit Arduino Mikrocontrollern umgesetzt und dabei meine Programmierkenntnisse erweitert. Außerdem habe ich zwei Computerspiele mit der Unity Engine entwickelt. Diese haben mich dazu motiviert, am KIT Informatik zu studieren und mich mit Computergrafik und performanter Programmierung zu beschäftigen. 2023 habe ich meine Bachelorarbeit "Real Time Neural Path Guiding" geschrieben und mein Studium mit dem Bachelor of Science abgeschlossen.
 

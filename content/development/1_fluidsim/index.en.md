@@ -6,6 +6,7 @@ date: 2023-08-02
 cardimage: fluid_card.png
 featureimage: fluid.png
 caption: Wind tunnel scene simulating turbulent flow around a circular obstacle.
+level: university
 authors:
   - Dominik: author.png
 links:
