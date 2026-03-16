@@ -7,10 +7,6 @@ cardimage: ivs3d_card.png
 featureimage: ivs3d_card.png
 caption: Main application window of iVS3D showing an image sequence with selected frames and GPS locations.
 level: university
-keywords:
-  - Computer Vision
-  - Qt / OpenCV
-  - Cross-Platform
 authors:
   - Dominik: author.png
 links:

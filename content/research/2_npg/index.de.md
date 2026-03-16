@@ -6,10 +6,6 @@ date: 2023-03-30
 cardimage: bachelorthesis_card.png
 featureimage: bachelorthesis_card_original.png
 caption: Vergleich meiner Neural Path Guiding Implementierung mit klassischem Path-Tracing (links) und dem SOTA RTXDI von Nvidia (rechts).
-keywords:
-  - Path Guiding
-  - Echtzeit-Raytracing
-  - Neural Rendering
 authors:
   - Dominik: author.png
 links:

@@ -6,10 +6,6 @@ date: 2021-03-15
 cardimage: learning_cfd_card.png
 featureimage: learning_cfd.png
 caption: "3D fluid simulation using a CNN ([Link to image source](https://github.com/google/FluidNet))"
-keywords:
-  - Fluid Simulation
-  - Neural Networks
-  - Literature Review
 authors:
   - Dominik: author.png
 links:

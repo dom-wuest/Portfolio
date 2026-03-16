@@ -7,10 +7,6 @@ cardimage: ambilight_card.jpg
 featureimage: ambilight_card.jpg
 caption: Example of an Ambilight installation with LED strips.
 level: school
-keywords:
-  - Arduino
-  - LED Control
-  - C++ / C#
 authors:
   - Dominik: author.png
 ---

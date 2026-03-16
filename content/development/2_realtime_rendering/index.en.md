@@ -7,10 +7,6 @@ cardimage: realtime_rendering_card.png
 featureimage: realtime_rendering_card.png
 caption: Village-Scene rendered with ReSTIR.
 level: university
-keywords:
-  - OpenGL
-  - ReSTIR
-  - Path Guiding
 authors:
   - Dominik: author.png
 ---
