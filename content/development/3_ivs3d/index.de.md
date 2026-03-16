@@ -7,6 +7,10 @@ cardimage: ivs3d_card.png
 featureimage: ivs3d_card.png
 caption: Hauptfenster von iVS3D mit ausgewählten Bildern und deren GPS Positionen.
 level: university
+keywords:
+  - Computer Vision
+  - Qt / OpenCV
+  - Cross-Platform
 authors:
   - Dominik: author.png
 links:

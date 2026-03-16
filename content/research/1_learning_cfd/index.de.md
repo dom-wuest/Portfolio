@@ -6,6 +6,10 @@ date: 2021-03-15
 cardimage: learning_cfd_card.png
 featureimage: learning_cfd.png
 caption: "3D Strömungssimulation mit einem CNN ([Link zur Bildquelle](https://github.com/google/FluidNet))"
+keywords:
+  - Strömungssimulation
+  - Neuronale Netze
+  - Literaturreview
 authors:
   - Dominik: author.png
 links:

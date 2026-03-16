@@ -7,6 +7,10 @@ cardimage: ambilight_card.jpg
 featureimage: ambilight_card.jpg
 caption: Beispiel für eine Ambilight-Installation mit LED-Streifen.
 level: school
+keywords:
+  - Arduino
+  - LED-Steuerung
+  - C++ / C#
 authors:
   - Dominik: author.png
 ---

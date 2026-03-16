@@ -7,6 +7,10 @@ cardimage: fluid_card.png
 featureimage: fluid.png
 caption: Wind tunnel scene simulating turbulent flow around a circular obstacle.
 level: university
+keywords:
+  - Vulkan Compute
+  - GLSL
+  - Fluid Simulation
 authors:
   - Dominik: author.png
 links:

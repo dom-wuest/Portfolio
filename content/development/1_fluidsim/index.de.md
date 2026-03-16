@@ -7,6 +7,10 @@ cardimage: fluid_card.png
 featureimage: fluid.png
 caption: Windkanal-Szene, die turbulente Strömung um ein rundes Hindernis simuliert.
 level: university
+keywords:
+  - Vulkan Compute
+  - GLSL
+  - Strömungssimulation
 authors:
   - Dominik: author.png
 links:
