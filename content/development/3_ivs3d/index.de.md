@@ -16,7 +16,7 @@ links:
 ## Intelligent Video Sampler 3D
 iVS3D (Intelligent Video Sampler 3D) ist ein Open-Source-Framework zur Vorverarbeitung für die 3D-Rekonstruktion. Anstatt jedes einzelne Videoframe in eine Structure-from-Motion-Pipeline zu geben, hilft iVS3D dabei, einen saubereren und effizienteren Datensatz zu erzeugen: ausgewählte Bilder, synchronisierte Metadaten und optionale Segmentierungsmasken.
 
-{{< vidSingle src="https://github.com/iVS3D/iVS3D/raw/refs/heads/video/iVS3D.mp4" poster="images/thumbnail.png" width="100%" >}}
+{{< vidSingle src="https://github.com/iVS3D/iVS3D/raw/refs/heads/master/iVS3D.mp4" poster="images/thumbnail.png" width="100%" >}}
 
 In den letzten Jahren habe ich an diesem Projekt mit einem starken Fokus auf Engineering und Erweiterbarkeit mitgearbeitet. Ein wichtiger Teil meiner Arbeit waren Integration und Pflege plattformübergreifender Tools wie Qt, OpenCV und CMake, damit die Anwendung auf unterschiedlichen Betriebssystemen (Windows, Linux) und Hardwarekonfigurationen (mit/ohne CUDA) zuverlässig gebaut und eingesetzt werden kann.
 
