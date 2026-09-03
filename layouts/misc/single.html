@@ -54,4 +54,10 @@
       {{ end }}
     </article>
   </div>
+
+  {{/* CV block, gated so it cannot leak onto a future misc page.
+       Deliberately outside the `prose` span above: Tailwind Typography
+       would restyle its headings and lists and `not-prose` is not in the
+       theme's purged CSS build. */}}
+  {{ if .Params.cv }}{{ partial "cv.html" . }}{{ end }}
 {{ end }}

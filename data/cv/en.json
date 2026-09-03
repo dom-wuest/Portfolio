@@ -1,0 +1,441 @@
+{
+  "contacts": [
+    {
+      "icon": "envelope",
+      "id": "email",
+      "url": "mailto:kontakt@dom-wuest.de",
+      "value": "kontakt@dom-wuest.de"
+    },
+    {
+      "icon": "location-dot",
+      "id": "location",
+      "private": "refine",
+      "value": "Karlsruhe, DE"
+    },
+    {
+      "brand": true,
+      "icon": "linkedin",
+      "id": "linkedin",
+      "url": "https://linkedin.com/in/dom-wuest",
+      "value": "linkedin.com/in/dom-wuest"
+    },
+    {
+      "brand": true,
+      "icon": "github",
+      "id": "github",
+      "url": "https://github.com/dom-wuest",
+      "value": "github.com/dom-wuest"
+    },
+    {
+      "icon": "globe",
+      "id": "website",
+      "url": "https://dom-wuest.de",
+      "value": "dom-wuest.de"
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Sc. Computer Science",
+      "end": null,
+      "end_display": "Present",
+      "end_iso": null,
+      "grade": "1.2",
+      "grade_note": "current",
+      "id": "msc-kit",
+      "location": "Karlsruhe, Germany",
+      "meta_line": "Thesis: Automatic Shader Function Level of Detail using Neural Networks and Symbolic Regression – Current Grade 1.2",
+      "ongoing": true,
+      "org": "Karlsruhe Institute of Technology (KIT)",
+      "start": "2023",
+      "start_display": "2023",
+      "start_iso": "2023",
+      "tags": [
+        "Computer Graphics",
+        "Anthropomatics and Cognitive Systems"
+      ],
+      "thesis": "Automatic Shader Function Level of Detail using Neural Networks and Symbolic Regression"
+    },
+    {
+      "degree": "B.Sc. Computer Science",
+      "end": "2023",
+      "end_display": "2023",
+      "end_iso": "2023",
+      "grade": "2.1",
+      "grade_note": "final",
+      "id": "bsc-kit",
+      "location": "Karlsruhe, Germany",
+      "meta_line": "Thesis: Real-Time Neural Path-Guiding – Minor: Electrical Engineering – Grade 2.1",
+      "minor": "Electrical Engineering",
+      "ongoing": false,
+      "org": "Karlsruhe Institute of Technology (KIT)",
+      "start": "2018",
+      "start_display": "2018",
+      "start_iso": "2018",
+      "thesis": "Real-Time Neural Path-Guiding"
+    },
+    {
+      "degree": "Allgemeine Hochschulreife",
+      "end": "2018",
+      "end_display": "2018",
+      "end_iso": "2018",
+      "grade": "1.2",
+      "grade_note": "final",
+      "id": "abitur",
+      "location": "Schwäbisch Hall, Germany",
+      "meta_line": "Specialization: Computer Science – Grade 1.2",
+      "ongoing": false,
+      "org": "Technisches Gymnasium Schwäbisch Hall",
+      "specialization": "Computer Science",
+      "start": "2015",
+      "start_display": "2015",
+      "start_iso": "2015"
+    }
+  ],
+  "experience": [
+    {
+      "end": "2026-03",
+      "end_display": "Mar 2026",
+      "end_iso": "2026-03",
+      "highlights": [
+        "Applied pretrained computer vision models for object detection, segmentation, image retrieval, and vision-language embeddings to accelerate Structure-from-Motion pipelines",
+        "Deployed deep learning models in C++ using ONNX Runtime and clip.cpp, converting models to ONNX and modifying computation graphs to support dynamic batch sizes and image resolutions",
+        "Developed and shipped cross-platform software and maintained CI/CD pipelines using GitLab and Docker"
+      ],
+      "id": "fraunhofer-iosb",
+      "location": "Karlsruhe, Germany",
+      "meta_line": "Karlsruhe, Germany",
+      "ongoing": false,
+      "org": "Fraunhofer IOSB",
+      "role": "Research Assistant",
+      "start": "2021-10",
+      "start_display": "Oct 2021",
+      "start_iso": "2021-10",
+      "tags": [
+        "C++",
+        "Qt",
+        "OpenCV",
+        "ONNX Runtime"
+      ]
+    },
+    {
+      "end": "2025-08",
+      "end_display": "Aug 2025",
+      "end_iso": "2025-08",
+      "highlights": [
+        "Contributed to a LLM-based shader optimization pipeline by integrating the Falcor renderer and adding support for cooperative vector acceleration",
+        "Designed related LLM prompts and analyzed proposed optimizations automatically",
+        "Co-author on related paper under submission"
+      ],
+      "id": "kit-ivd",
+      "location": "Karlsruhe, Germany",
+      "meta_line": "Karlsruhe, Germany",
+      "ongoing": false,
+      "org": "Karlsruhe Institute of Technology (IVD)",
+      "role": "Research Assistant",
+      "start": "2025-05",
+      "start_display": "May 2025",
+      "start_iso": "2025-05",
+      "tags": [
+        "Python",
+        "C++",
+        "Slang"
+      ]
+    },
+    {
+      "end": "2021-07",
+      "end_display": "Jul 2021",
+      "end_iso": "2021-07",
+      "highlights": [
+        "Tutored a group of students in computer engineering",
+        "Courses in fundamentals of microelectronics, design and construction of logic circuits"
+      ],
+      "id": "kit-capp",
+      "location": "Karlsruhe, Germany",
+      "meta_line": "Karlsruhe, Germany",
+      "ongoing": false,
+      "org": "Karlsruhe Institute of Technology (CAPP)",
+      "role": "Student Assistant",
+      "start": "2020-11",
+      "start_display": "Nov 2020",
+      "start_iso": "2020-11",
+      "tags": [
+        "LaTeX",
+        "C",
+        "Presentations"
+      ]
+    }
+  ],
+  "interests": [
+    "Weight Lifting",
+    "Hiking",
+    "PC Modding",
+    "Spaceflight"
+  ],
+  "labels": {
+    "education": "Education",
+    "experience": "Experience",
+    "grade": "Grade",
+    "grade_current": "Current Grade",
+    "interests": "Interests",
+    "languages": "Languages",
+    "minor": "Minor",
+    "page": "Page",
+    "present": "Present",
+    "profile": "Profile",
+    "projects": "Projects",
+    "skills": "Skills",
+    "specialization": "Specialization",
+    "thesis": "Thesis"
+  },
+  "languages": [
+    {
+      "level": "native",
+      "name": "German",
+      "rating": 5
+    },
+    {
+      "level": "fluent",
+      "name": "English",
+      "rating": 4
+    }
+  ],
+  "meta": {
+    "lang": "en",
+    "name": "Dominik Wüst",
+    "photo": "assets/avatar.jpg",
+    "profile": "public",
+    "projects_layout": "page",
+    "tagline": "M.Sc. Computer Science – Machine Learning & Rendering Engineer"
+  },
+  "profile": "Computer Science graduate specializing in real-time computer graphics, GPU programming and machine learning. Experienced in C++, Vulkan and Python through research at KIT and Fraunhofer IOSB. Interested in neural rendering, differentiable graphics and computer vision.",
+  "projects": [
+    {
+      "end": "2026",
+      "end_display": "2026",
+      "end_iso": "2026",
+      "id": "shader-lod",
+      "image": null,
+      "meta_line": null,
+      "name": "Automatic Shader Function Level of Detail using Neural Networks and Symbolic Regression",
+      "ongoing": false,
+      "start": "2026",
+      "start_display": "2026",
+      "start_iso": "2026",
+      "summary": "Master's thesis: a data-driven approach to shader level of detail. Tiny MLPs and symbolic expressions are fitted automatically to approximate shader functions. The pipeline collects training data, fits the models, optimizes hyperparameters and evaluates candidates by rendering the shader end-to-end. It also explores fitting the models with respect to the final image using differentiable rendering.",
+      "tags": [
+        "Machine Learning",
+        "Python",
+        "Slang"
+      ],
+      "url_note": "Code will be published after grading"
+    },
+    {
+      "end": "2023",
+      "end_display": "2023",
+      "end_iso": "2023",
+      "id": "fluid-sim-2d",
+      "image": "assets/projects/fluid-sim-2d.jpg",
+      "meta_line": null,
+      "name": "2D Fluid Simulation on the GPU",
+      "ongoing": false,
+      "start": "2023",
+      "start_display": "2023",
+      "start_iso": "2023",
+      "summary": "An incompressible fluid simulation built on Vulkan compute shaders. It operates on a two-dimensional grid and supports solid and fluid cells with various initial conditions. Performance bottlenecks were analyzed with NVIDIA Nsight Graphics and optimized through ghost zoning, kernel decomposition and loop unrolling.",
+      "tags": [
+        "C++",
+        "Vulkan",
+        "CFD"
+      ],
+      "url": "https://github.com/dom-wuest/FluidSim2D",
+      "url_label": "github.com/dom-wuest/FluidSim2D"
+    },
+    {
+      "end": "2023",
+      "end_display": "2023",
+      "end_iso": "2023",
+      "id": "neural-path-guiding",
+      "image": "assets/projects/neural-path-guiding.jpg",
+      "meta_line": null,
+      "name": "Real-Time Neural Path-Guiding",
+      "ongoing": false,
+      "start": "2023",
+      "start_display": "2023",
+      "start_iso": "2023",
+      "summary": "Bachelor's thesis: a compact MLP predicts the incident illumination at surfaces and guides subsequent rays. Training data is collected while rendering and the network is trained online to predict vMF distributions. In the next frame these steer the rays at the first visible surface towards bright regions.",
+      "tags": [
+        "Path-Tracing",
+        "Machine Learning",
+        "CUDA"
+      ],
+      "url": "https://github.com/dom-wuest/NeuralPathGuiding",
+      "url_label": "github.com/dom-wuest/NeuralPathGuiding"
+    },
+    {
+      "end": null,
+      "end_display": "Present",
+      "end_iso": null,
+      "id": "ivs3d",
+      "image": "assets/projects/ivs3d.jpg",
+      "meta_line": null,
+      "name": "Intelligent Video Sampler 3D",
+      "ongoing": true,
+      "start": "2021",
+      "start_display": "2021",
+      "start_iso": "2021",
+      "summary": "Preprocessing of image sequences for Structure-from-Motion using computer vision algorithms and deep learning models. The open-source project has been developed actively for over five years and runs on Windows and Linux. A plugin architecture selects frames by camera movement, deep visual similarity and GPS position, and masks dynamic objects such as vehicles automatically before a configurable SfM workflow starts.",
+      "tags": [
+        "C++",
+        "Qt",
+        "OpenCV"
+      ],
+      "url": "https://github.com/iVS3D/iVS3D",
+      "url_label": "github.com/iVS3D/iVS3D"
+    }
+  ],
+  "sections": [
+    "profile",
+    "experience",
+    "education",
+    "skills",
+    "languages",
+    "interests"
+  ],
+  "skills": [
+    {
+      "group": "Programming",
+      "items": [
+        {
+          "name": "C++",
+          "note": "professional",
+          "rating": 5
+        },
+        {
+          "name": "Python",
+          "note": "professional",
+          "rating": 4
+        },
+        {
+          "name": "C#",
+          "note": "personal projects",
+          "rating": 2
+        },
+        {
+          "name": "Rust",
+          "note": "personal projects",
+          "rating": 1
+        }
+      ]
+    },
+    {
+      "group": "Graphics & GPU",
+      "items": [
+        {
+          "name": "Vulkan",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "Slang",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "GLSL",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "CUDA",
+          "note": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "group": "Machine Learning",
+      "items": [
+        {
+          "name": "PyTorch",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "ONNX Runtime",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "tiny-cuda-nn",
+          "note": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "group": "Computer Vision",
+      "items": [
+        {
+          "name": "OpenCV",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "OpenMMLab",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "clip.cpp",
+          "note": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "group": "Frameworks & UI",
+      "items": [
+        {
+          "name": "Qt",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "HTML/CSS",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "ImGui",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "React",
+          "note": null,
+          "rating": null
+        }
+      ]
+    },
+    {
+      "group": "Tooling",
+      "items": [
+        {
+          "name": "Docker",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "CMake",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "GitLab CI/CD",
+          "note": null,
+          "rating": null
+        }
+      ]
+    }
+  ]
+}

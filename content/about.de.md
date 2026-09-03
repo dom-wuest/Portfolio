@@ -6,6 +6,7 @@ type: misc
 jobTitle: Graphics & AI Researcher
 name: Dominik Wüst
 bio: true
+cv: true
 icon: ":coffee:"
 ---
 

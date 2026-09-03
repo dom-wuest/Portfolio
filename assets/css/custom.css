@@ -1,0 +1,290 @@
+/* ==========================================================================
+   CV block (data/cv/*.json -> layouts/partials/cv.html)
+
+   Everything here is scoped under .cvf and every custom property is
+   prefixed --cvf- so nothing can collide with the qubt theme.
+
+   Only rules the theme's purged Tailwind build cannot express live here:
+   the timeline rail, the node circles, chips, proficiency bars, the
+   highlight bullets and uppercase/tracked section headings.
+   Colour, type scale and spacing come from theme classes in the partial.
+
+   Dark mode follows the theme: prefers-color-scheme, not a .dark class.
+   ========================================================================== */
+
+.cvf {
+  /* page ground - must match body (bg-neutral-100) so ring nodes punch out */
+  --cvf-bg: #f5f5f5;
+  --cvf-accent: #2f6ba8;
+  --cvf-rail: #cbd5e1;
+  --cvf-muted: #64748b;
+  --cvf-bullet: #94a3b8;
+  --cvf-chip-bg: rgba(47, 107, 168, 0.07);
+  --cvf-chip-border: rgba(47, 107, 168, 0.3);
+  --cvf-chip-fg: #475569;
+  --cvf-track: #d8dee7;
+  --cvf-rule: #d8dee7;
+
+  /* timeline geometry.
+     rail x = -(--cvf-gutter) from the entry's content edge;
+     the date column sits a further --cvf-date-gap to the left of it. */
+  --cvf-date-col: 5rem;
+  --cvf-date-gap: 0.6rem;
+  --cvf-gutter: 1.15rem;
+  --cvf-node: 9px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cvf {
+    --cvf-bg: #262626; /* dark:bg-neutral-800 */
+    --cvf-accent: #8ab4f8;
+    --cvf-rail: #4b5563;
+    --cvf-muted: #94a3b8;
+    --cvf-bullet: #64748b;
+    --cvf-chip-bg: rgba(138, 180, 248, 0.1);
+    --cvf-chip-border: rgba(138, 180, 248, 0.3);
+    --cvf-chip-fg: #cbd5e1;
+    --cvf-track: #3f3f46;
+    --cvf-rule: #3f3f46;
+  }
+}
+
+/* --- section heading (uppercase + tracking are absent from the build) ---- */
+
+.cvf__h {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--cvf-accent);
+  border-bottom: 1px solid var(--cvf-rule);
+  padding-bottom: 0.35rem;
+}
+
+/* --- PDF download pill ---------------------------------------------------- */
+
+.cvf__pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--cvf-chip-border);
+  border-radius: 9999px;
+  background: var(--cvf-chip-bg);
+  color: var(--cvf-accent);
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.cvf__pdf:hover {
+  background: var(--cvf-chip-border);
+}
+
+.cvf__pdf svg {
+  width: 0.9em;
+  height: 0.9em;
+  fill: currentColor;
+  flex: none;
+}
+
+/* --- timeline ------------------------------------------------------------- */
+
+.cvf__timeline {
+  list-style: none;
+  margin: 0;
+  /* the rail itself: border-l* is not in the purged build */
+  border-left: 2px solid var(--cvf-rail);
+  margin-left: calc(var(--cvf-date-col) + var(--cvf-date-gap));
+  padding-left: var(--cvf-gutter);
+}
+
+.cvf__entry {
+  position: relative;
+  padding-bottom: 1.75rem;
+}
+
+.cvf__entry:last-child {
+  padding-bottom: 0;
+}
+
+/* node circle sitting on the rail */
+.cvf__entry::before {
+  content: "";
+  position: absolute;
+  top: 0.45rem;
+  left: calc((var(--cvf-gutter) + var(--cvf-node) / 2 + 1px) * -1);
+  width: var(--cvf-node);
+  height: var(--cvf-node);
+  border-radius: 9999px;
+  background: var(--cvf-accent);
+}
+
+/* education uses hollow rings, like the PDF */
+.cvf__timeline--ring > .cvf__entry::before {
+  background: var(--cvf-bg);
+  border: 2px solid var(--cvf-accent);
+}
+
+/* date column, pulled out to the left of the rail */
+.cvf__dates {
+  position: absolute;
+  top: 0.1rem;
+  right: calc(100% + var(--cvf-gutter) + var(--cvf-date-gap));
+  width: var(--cvf-date-col);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  line-height: 1.3;
+  color: var(--cvf-muted);
+}
+
+.cvf__date--now {
+  font-style: italic;
+}
+
+/* entry title: Role | Organisation */
+.cvf__sep {
+  display: inline-block;
+  width: 1px;
+  height: 0.9em;
+  margin: 0 0.5rem;
+  vertical-align: -0.05em;
+  background: var(--cvf-rail);
+}
+
+.cvf__org {
+  color: var(--cvf-accent);
+  font-weight: 400;
+}
+
+/* highlight bullets (list-disc is absent from the build) */
+.cvf__highlights {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+}
+
+.cvf__highlights > li {
+  position: relative;
+  padding-left: 0.95rem;
+  margin-top: 0.2rem;
+}
+
+.cvf__highlights > li::before {
+  content: "";
+  position: absolute;
+  left: 0.15rem;
+  top: 0.62em;
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  background: var(--cvf-bullet);
+}
+
+/* --- chips ---------------------------------------------------------------- */
+
+.cvf__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.55rem 0 0;
+  padding: 0;
+}
+
+.cvf__tag {
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--cvf-chip-border);
+  border-radius: 0.375rem;
+  background: var(--cvf-chip-bg);
+  color: var(--cvf-chip-fg);
+  line-height: 1.45;
+}
+
+/* --- skills & languages --------------------------------------------------- */
+
+.cvf__groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.4rem 2rem;
+}
+
+.cvf__group-h {
+  color: var(--cvf-muted);
+  border-bottom: 1px solid var(--cvf-rule);
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cvf__rated {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 20rem;
+}
+
+.cvf__rated > li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.45rem;
+}
+
+.cvf__rated > li:first-child {
+  margin-top: 0;
+}
+
+.cvf__note {
+  display: block;
+  color: var(--cvf-muted);
+  line-height: 1.3;
+}
+
+.cvf__bar {
+  flex: none;
+  width: 64px;
+  height: 4px;
+  border-radius: 9999px;
+  background: var(--cvf-track);
+  overflow: hidden;
+  align-self: center;
+}
+
+.cvf__bar > span {
+  display: block;
+  height: 100%;
+  border-radius: 9999px;
+  background: var(--cvf-accent);
+}
+
+/* --- narrow viewports ----------------------------------------------------- */
+
+@media (max-width: 639px) {
+  .cvf__timeline {
+    margin-left: 0;
+    padding-left: var(--cvf-gutter);
+  }
+
+  /* dates flow back inline above the entry title */
+  .cvf__dates {
+    position: static;
+    width: auto;
+    flex-direction: row;
+    align-items: baseline;
+    text-align: left;
+    margin-bottom: 0.1rem;
+  }
+
+  .cvf__dates > :not(:first-child)::before {
+    content: "\2013";
+    margin: 0 0.3rem;
+  }
+}
+
+/* --- print ---------------------------------------------------------------- */
+
+@media print {
+  .cvf__pdf {
+    display: none;
+  }
+}

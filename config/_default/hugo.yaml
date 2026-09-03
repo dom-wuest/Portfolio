@@ -23,6 +23,8 @@ languages:
     languageName: Deutsch
     params:
       bio: Biografie
+      cv: Lebenslauf
+      cvdownload: Als PDF herunterladen
       publishedwith: Erstellt mit
       youmightlike: Inspiriert durch
     weight: 1
@@ -34,6 +36,8 @@ languages:
     languageName: English
     params:
       bio: Biography
+      cv: Curriculum Vitae
+      cvdownload: Download as PDF
       publishedwith: Published with
       youmightlike: Inspired by
     weight: 2
