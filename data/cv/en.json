@@ -3,14 +3,9 @@
     {
       "icon": "envelope",
       "id": "email",
+      "private": "refine",
       "url": "mailto:kontakt@dom-wuest.de",
       "value": "kontakt@dom-wuest.de"
-    },
-    {
-      "icon": "location-dot",
-      "id": "location",
-      "private": "refine",
-      "value": "Karlsruhe, DE"
     },
     {
       "brand": true,
@@ -18,6 +13,13 @@
       "id": "linkedin",
       "url": "https://linkedin.com/in/dom-wuest",
       "value": "linkedin.com/in/dom-wuest"
+    },
+    {
+      "icon": "location-dot",
+      "id": "location",
+      "private": "refine",
+      "url": "https://www.google.com/maps/search/?api=1&query=Karlsruhe%2C+Germany",
+      "value": "Karlsruhe, DE"
     },
     {
       "brand": true,
@@ -36,15 +38,15 @@
   "education": [
     {
       "degree": "M.Sc. Computer Science",
-      "end": null,
-      "end_display": "Present",
-      "end_iso": null,
+      "end": "2026",
+      "end_display": "2026",
+      "end_iso": "2026",
       "grade": "1.2",
-      "grade_note": "current",
+      "grade_note": "preliminary",
       "id": "msc-kit",
       "location": "Karlsruhe, Germany",
-      "meta_line": "Thesis: Automatic Shader Function Level of Detail using Neural Networks and Symbolic Regression – Current Grade 1.2",
-      "ongoing": true,
+      "meta_line": "Thesis: Automatic Shader Function Level of Detail using Neural Networks and Symbolic Regression – Preliminary Grade 1.2",
+      "ongoing": false,
       "org": "Karlsruhe Institute of Technology (KIT)",
       "start": "2023",
       "start_display": "2023",
@@ -176,6 +178,7 @@
     "experience": "Experience",
     "grade": "Grade",
     "grade_current": "Current Grade",
+    "grade_preliminary": "Preliminary Grade",
     "interests": "Interests",
     "languages": "Languages",
     "minor": "Minor",
@@ -432,6 +435,11 @@
         },
         {
           "name": "GitLab CI/CD",
+          "note": null,
+          "rating": null
+        },
+        {
+          "name": "Claude Code",
           "note": null,
           "rating": null
         }
