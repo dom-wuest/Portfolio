@@ -213,13 +213,73 @@
   "profile": "Computer Science graduate specializing in real-time computer graphics, GPU programming and machine learning. Experienced in C++, Vulkan and Python through research at KIT and Fraunhofer IOSB. Interested in neural rendering, differentiable graphics and computer vision.",
   "projects": [
     {
+      "authors": [
+        {
+          "break_after": false,
+          "me": false,
+          "name": "M. Dereviannykh"
+        },
+        {
+          "break_after": false,
+          "me": false,
+          "name": "D. Klepikov"
+        },
+        {
+          "break_after": false,
+          "me": false,
+          "name": "H. Brucker"
+        },
+        {
+          "break_after": true,
+          "me": true,
+          "name": "D. Wüst"
+        },
+        {
+          "break_after": false,
+          "me": false,
+          "name": "B. Krimmel"
+        },
+        {
+          "break_after": false,
+          "me": false,
+          "name": "R. Dolp"
+        },
+        {
+          "break_after": false,
+          "me": false,
+          "name": "C. Dachsbacher"
+        }
+      ],
+      "end": "2026",
+      "end_display": "2026",
+      "end_iso": "2026",
+      "id": "llm-render-opt",
+      "image": "assets/projects/llm-render-opt.jpg",
+      "meta_line": null,
+      "name": "Efficient Validation for\nLLM-Generated Rendering Optimizations",
+      "ongoing": false,
+      "start": "2026",
+      "start_display": "2026",
+      "start_iso": "2026",
+      "summary": "LLM-driven evolutionary search finds shader and render-pass speedups of up to 2.19×; a Bayesian sequential test proves them visually safe with 47–85% fewer validation renders.",
+      "tags": [
+        "LLM",
+        "Python",
+        "GLSL"
+      ],
+      "url": "https://renderopt.github.io",
+      "url_label": "renderopt.github.io",
+      "url_note": "paper coming soon"
+    },
+    {
+      "authors": [],
       "end": "2026",
       "end_display": "2026",
       "end_iso": "2026",
       "id": "shader-lod",
-      "image": null,
+      "image": "assets/projects/shader-lod.jpg",
       "meta_line": null,
-      "name": "Automatic Shader Function Level of Detail using Neural Networks and Symbolic Regression",
+      "name": "Automatic Shader Function Level of Detail using\nNeural Networks and Symbolic Regression",
       "ongoing": false,
       "start": "2026",
       "start_display": "2026",
@@ -233,6 +293,7 @@
       "url_note": "Code will be published after grading"
     },
     {
+      "authors": [],
       "end": "2023",
       "end_display": "2023",
       "end_iso": "2023",
@@ -254,6 +315,7 @@
       "url_label": "github.com/dom-wuest/FluidSim2D"
     },
     {
+      "authors": [],
       "end": "2023",
       "end_display": "2023",
       "end_iso": "2023",
@@ -275,6 +337,7 @@
       "url_label": "github.com/dom-wuest/NeuralPathGuiding"
     },
     {
+      "authors": [],
       "end": null,
       "end_display": "Present",
       "end_iso": null,
